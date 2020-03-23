@@ -22,6 +22,10 @@ Setup
 
 > #### ![#1589F0](https://placehold.it/15/ff0000/000000?text=+) Importante! Ao rodar o projeto no ambiente local, é importamte mudar no application.properties o tipo de ambiente para dev, pois se deixar como prod, não vai funcionar a conexão com o Heroku por conta de limitação do plano free.
 
+----
+
+### Endpoints
+
 
 > ## ![#f03c15](https://placehold.it/15/fdff49/000000?text=+) POST Adicionar
 > `http://localhost:8080/api/pessoas`
