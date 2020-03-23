@@ -37,6 +37,14 @@
 
 ----
 
+> ## ![#1589F0](https://placehold.it/15/3dd200/000000?text=+) GET Pesquisar por Nome
+> `http://localhost:8080/api/pessoas?nome=Lucas`
+
+> ### Headers
+> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+
+----
+
 > ## ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) PUT Atualizar
 > `http://localhost:8080/api/pessoas/bee63edf-d3e8-43d8-be2e-73beb3a8e8c6`
 
