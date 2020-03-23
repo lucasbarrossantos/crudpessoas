@@ -1,4 +1,24 @@
-# Cadastro de Pessoas
+# API Cadastro de Pessoas
+
+## Start
+
+Após dar o clone do projeto, como é um projeto maven, então o próprio maven vai baixar as dependências do projeto. Após isso é só rodar ou pelo maven ou pela ide
+
+Pelo maven: `./mvnw spring-boot:run`
+
+Setup
+- Java 8
+- Project Lombok [v:1.18.12](https://projectlombok.org/) 
+- Spring Boot
+- Spring Data JPA
+- Postgresql
+- Hibernate
+- Junit para testes
+- Spring Security. Autenticação `Basic`
+- Modelmapper
+
+
+> Guia de configuração do [Lombok](https://dicasdejava.com.br/como-configurar-o-lombok-no-eclipse/)
 
 > ## ![#f03c15](https://placehold.it/15/fdff49/000000?text=+) POST Adicionar
 > `http://localhost:8080/api/pessoas`
