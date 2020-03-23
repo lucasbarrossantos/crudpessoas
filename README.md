@@ -2,7 +2,7 @@
 
 ## Start
 
-Após dar o clone do projeto, como é um projeto maven, então o próprio maven vai baixar as dependências do projeto. Após isso é só rodar ou pelo maven ou pela ide
+Após clonar este repositório e importar na sua IDE de preferência, então o maven irá baixar as dependências do projeto. Após isso é só rodar ou pelo maven ou pela ide
 
 Pelo maven: `./mvnw spring-boot:run`
 
