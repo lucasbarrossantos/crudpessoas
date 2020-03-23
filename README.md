@@ -44,7 +44,7 @@ Setup
 }
 ```
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -60,7 +60,7 @@ Setup
 > `http://localhost:8080/api/pessoas/bee63edf-d3e8-43d8-be2e-73beb3a8e8c6`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -68,7 +68,7 @@ Setup
 > `http://localhost:8080/api/pessoas?nome=Lucas`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -89,7 +89,7 @@ Setup
 }
 ```
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -97,4 +97,4 @@ Setup
 > `http://localhost:8080/api/pessoas/bee63edf-d3e8-43d8-be2e-73beb3a8e8c6`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
