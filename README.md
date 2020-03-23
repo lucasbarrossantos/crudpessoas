@@ -52,7 +52,7 @@ Setup
 > `http://localhost:8080/api/pessoas`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
