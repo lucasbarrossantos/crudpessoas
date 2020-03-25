@@ -20,6 +20,13 @@ Setup
 
 > Guia de configuração do [Lombok](https://dicasdejava.com.br/como-configurar-o-lombok-no-eclipse/)
 
+> #### ![#1589F0](https://placehold.it/15/ff0000/000000?text=+) Importante! Ao rodar o projeto no ambiente local, é importamte mudar no application.properties o tipo de ambiente para dev, pois se deixar como prod, não vai funcionar a conexão com o Heroku por conta de limitação do plano free.
+
+----
+
+### Endpoints
+
+
 > ## ![#f03c15](https://placehold.it/15/fdff49/000000?text=+) POST Adicionar
 > `http://localhost:8080/api/pessoas`
 
@@ -37,7 +44,7 @@ Setup
 }
 ```
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -45,7 +52,7 @@ Setup
 > `http://localhost:8080/api/pessoas`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -53,7 +60,7 @@ Setup
 > `http://localhost:8080/api/pessoas/bee63edf-d3e8-43d8-be2e-73beb3a8e8c6`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -61,7 +68,7 @@ Setup
 > `http://localhost:8080/api/pessoas?nome=Lucas`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -82,7 +89,7 @@ Setup
 }
 ```
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
 
 ----
 
@@ -90,4 +97,4 @@ Setup
 > `http://localhost:8080/api/pessoas/bee63edf-d3e8-43d8-be2e-73beb3a8e8c6`
 
 > ### Headers
-> `Authorization	Basic 42608df0-7e1b-4c97-8307-dee366762e74`
+> `Authorization	Basic bHVjYXNiYXJyb3M6bHVjYXNAMTIz`
