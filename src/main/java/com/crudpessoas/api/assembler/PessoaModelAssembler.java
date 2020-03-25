@@ -3,7 +3,6 @@ package com.crudpessoas.api.assembler;
 import com.crudpessoas.api.model.input.PessoaInput;
 import com.crudpessoas.api.model.input.PessoaModel;
 import com.crudpessoas.domain.model.Pessoa;
-import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -12,10 +11,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class PessoaModelAssembler {
 
     private final ModelMapper modelMapper;
+
+    @Autowired
+    public PessoaModelAssembler(ModelMapper modelMapper) {
+        this.modelMapper = modelMapper;
+    }
 
     public Pessoa toDomainObject(PessoaInput pessoaInput) {
         return modelMapper.map(pessoaInput, Pessoa.class);

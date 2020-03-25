@@ -8,7 +8,6 @@ import com.crudpessoas.domain.repository.PessoaRepository;
 import com.crudpessoas.domain.repository.filter.PessoaFilter;
 import com.crudpessoas.domain.service.CadastroPessoaService;
 import com.crudpessoas.infrastructure.repository.PessoaSpecs;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -21,7 +20,6 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.UUID;
 
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @RestController
 @RequestMapping(path = "/pessoas", produces = MediaType.APPLICATION_JSON_VALUE)
 public class PessoaController {
@@ -29,6 +27,15 @@ public class PessoaController {
     private final PessoaModelAssembler pessoaModelAssembler;
     private final CadastroPessoaService cadastroPessoa;
     private final PessoaRepository pessoaRepository;
+
+    @Autowired
+    public PessoaController(PessoaModelAssembler pessoaModelAssembler,
+                            CadastroPessoaService cadastroPessoa,
+                            PessoaRepository pessoaRepository) {
+        this.pessoaModelAssembler = pessoaModelAssembler;
+        this.cadastroPessoa = cadastroPessoa;
+        this.pessoaRepository = pessoaRepository;
+    }
 
     @GetMapping
     public Page<PessoaModel> listar(Pageable pageable, PessoaFilter filter) {

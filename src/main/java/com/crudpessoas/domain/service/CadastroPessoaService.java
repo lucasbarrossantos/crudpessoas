@@ -4,7 +4,6 @@ import com.crudpessoas.domain.exception.NegocioException;
 import com.crudpessoas.domain.exception.PessoaNaoEncontradaException;
 import com.crudpessoas.domain.model.Pessoa;
 import com.crudpessoas.domain.repository.PessoaRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -14,10 +13,14 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class CadastroPessoaService {
 
     private final PessoaRepository pessoaRepository;
+
+    @Autowired
+    public CadastroPessoaService(PessoaRepository pessoaRepository) {
+        this.pessoaRepository = pessoaRepository;
+    }
 
     @Transactional
     public Pessoa adicionar(Pessoa pessoa) {

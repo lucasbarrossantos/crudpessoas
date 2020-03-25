@@ -1,8 +1,5 @@
 package com.crudpessoas.api.exceptionhandler;
 
-import lombok.Getter;
-
-@Getter
 public enum ProblemType {
 
 	DADOS_INVALIDOS("/dados-invalidos", "Dados inválidos"),
@@ -20,5 +17,12 @@ public enum ProblemType {
 		this.uri = "https://app.com.br" + path;
 		this.title = title;
 	}
-	
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getUri() {
+		return uri;
+	}
 }

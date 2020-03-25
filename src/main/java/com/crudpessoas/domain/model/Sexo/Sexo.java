@@ -1,8 +1,5 @@
 package com.crudpessoas.domain.model.Sexo;
 
-import lombok.Getter;
-
-@Getter
 public enum Sexo {
 
     MASCULINO("Masculino"),
@@ -14,4 +11,7 @@ public enum Sexo {
         this.descricao = descricao;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
 }
